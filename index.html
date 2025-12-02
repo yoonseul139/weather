@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <h2 class="title">Today’s weather forecast</h2>
+
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="도시명을 입력하세요"
+        />
+        <div class="input-group-append">
+          <button id="searchBtn" class="btn btn-success" type="submit">
+            search
+          </button>
+        </div>
+      </div>
+
+      <div class="contents">
+        <div class="con1">
+          <div class="main">
+            <div class="weatherCard">
+              <!-- <h2>현재날씨</h2> -->
+              <div class="p_name">
+                <!-- <span>위치</span> -->
+                <span id="place"></span>
+              </div>
+
+              <div>
+                <span>체감온도</span>
+                <span id="temp"></span><span>℃</span>
+              </div>
+              <div>
+                <span>풍속</span>
+                <span id="wind"></span><span>m/s</span>
+              </div>
+              <div>
+                <!-- <span>날씨설명</span> -->
+                <span id="des"></span>
+              </div>
+              <!-- <img id="icon" /> -->
+              <div class="weatherIcon">
+                <img id="Img" />
+              </div>
+            </div>
+
+            <canvas id="weatherChart"></canvas>
+          </div>
+
+          <div class="daily">
+            <p id="location"></p>
+            <ul>
+              <li>
+                <img />
+                <p></p>
+                <div class="temp"></div>
+              </li>
+              <li>
+                <img />
+                <p></p>
+                <div class="temp"></div>
+              </li>
+              <li>
+                <img />
+                <p></p>
+                <div class="temp"></div>
+              </li>
+              <li>
+                <img />
+                <p></p>
+                <div class="temp"></div>
+              </li>
+              <li>
+                <img />
+                <p></p>
+                <div class="temp"></div>
+              </li>
+              <li>
+                <img />
+                <p></p>
+                <div class="temp"></div>
+              </li>
+              <li>
+                <img />
+                <p></p>
+                <div class="temp"></div>
+              </li>
+              <li>
+                <img />
+                <p></p>
+                <div class="temp"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="con2">
+          <div class="clock">
+            <div class="calendar-frame">
+              <div id="card-container">
+                <div id="month-card" class="calendar-card month-card">
+                  <span class="card-text">DEC</span>
+                </div>
+
+                <div id="day1-card" class="calendar-card day-card">
+                  <span class="card-text">2</span>
+                </div>
+
+                <div id="day2-card" class="calendar-card day-card">
+                  <span class="card-text">5</span>
+                </div>
+              </div>
+            </div>
+            <div id="current-time">00:00:00</div>
+          </div>
+
+          <div class="picture">
+            <ul class="slide-inner">
+              <li><img src="img/sky.jpg" alt="화창한하늘" /></li>
+
+              <li><img src="img/cherryBlossoms.gif" alt="벚꽃" /></li>
+
+              <li><img src="img/shower.gif" alt="소나기" /></li>
+              <li><img src="img/skyFlower.gif" alt="살랑이는꽃" /></li>
+              <li><img src="img/sunset.gif" alt="노을" /></li>
+              <li><img src="img/snow.gif" alt="번개" /></li>
+              <li><img src="img/rain.gif" alt="비" /></li>
+
+              <li><img src="img/sky.jpg" alt="화창한하늘" /></li>
+
+              <li><img src="img/cherryBlossoms.gif" alt="벚꽃" /></li>
+
+              <li><img src="img/shower.gif" alt="소나기" /></li>
+              <li><img src="img/skyFlower.gif" alt="살랑이는꽃" /></li>
+              <li><img src="img/sunset.gif" alt="노을" /></li>
+              <li><img src="img/snow2.gif" alt="번개" /></li>
+              <li><img src="img/rain.gif" alt="비" /></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="weather.js"></script>
+  </body>
+</html>
