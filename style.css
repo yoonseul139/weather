@@ -337,7 +337,7 @@ ul {
 
   body {
     height: 100vh;
-    background-image: url(/img/forest.gif);
+    background-image: url(img/forest.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
