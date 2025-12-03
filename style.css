@@ -55,7 +55,7 @@ ul {
   .main {
     display: flex;
     width: 100%;
-    height: 500px;
+    height: 470px;
     gap: 50px;
     padding-right: 15px;
     box-sizing: border-box;
@@ -63,7 +63,7 @@ ul {
 
   .weatherCard {
     width: 500px;
-    height: 500px;
+    height: 470px;
     flex: 1; /* 남은 공간 1배 차지 */
     border: 1px solid gray;
     border-radius: 15px;
@@ -113,14 +113,14 @@ ul {
   /*일주일 날씨 daily*/
   .daily {
     width: 100%;
-    margin: 50px auto;
+    margin: 70px auto;
     text-align: center;
   }
 
   #location {
     display: inline-block;
     padding: 10px 40px;
-    margin: 70px 50px;
+    margin: 65px;
     border-radius: 20px 0px 20px 0px;
     color: #fff;
     background-color: rgba(4, 10, 119, 0.5);
