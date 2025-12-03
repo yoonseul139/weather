@@ -120,7 +120,7 @@ ul {
   #location {
     display: inline-block;
     padding: 10px 40px;
-    margin: 65px;
+    margin: 60px;
     border-radius: 20px 0px 20px 0px;
     color: #fff;
     background-color: rgba(4, 10, 119, 0.5);
@@ -139,7 +139,7 @@ ul {
 
   .daily li {
     width: calc(100%-140px / 8);
-    padding: 20px;
+    padding: 15px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 1);
     background-color: rgba(173, 215, 240, 0.7);
   }
